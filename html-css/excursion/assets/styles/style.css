@@ -1,0 +1,67 @@
+:root {
+  --textcolor: white;
+  --linkcolor: aquamarine;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  background-color: black;
+  text-align: center;
+  color: var(--textcolor);
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  font-size: 62.5%;
+}
+html body {
+  display: flex;
+  flex-flow: column;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+html body main {
+  flex: 1;
+}
+html body main h1 {
+  font-size: 5rem;
+}
+html body main a {
+  display: block;
+  color: var(--linkcolor);
+  font-size: 1.6rem;
+}
+html body main h2 {
+  font-size: 4.2rem;
+  font-weight: 300;
+}
+html body main p {
+  font-size: 2.1rem;
+  color: gray;
+}
+html body main img {
+  display: block;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 1.6rem;
+}
+html body main img.icon {
+  max-width: 80px;
+}
+html body footer {
+  margin-top: 4rem;
+  text-align: right;
+}
+html body footer p {
+  font-size: 1.6rem;
+  display: inline;
+  padding: 0 2rem 2rem 0;
+  color: gray;
+}
