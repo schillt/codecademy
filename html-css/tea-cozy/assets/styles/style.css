@@ -57,6 +57,8 @@ html body main section#mission {
   justify-content: center;
   align-items: center;
   background-image: url(../images/img-mission-background.jpg);
+  background-repeat: none;
+  background-size: cover;
   height: 700px;
 }
 html body main section#mission div.text {
@@ -90,6 +92,8 @@ html body main section#locations {
   min-height: 500px;
   padding-bottom: 50px ;
   background-image: url(../images/img-locations-background.jpg);
+  background-repeat: none;
+  background-size: cover;
 }
 html body main section#locations div {
   color: seashell;
