@@ -1,0 +1,124 @@
+:root{
+    --textcolor:seashell;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+
+html{
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica, sans-serif;
+    font-size: 10px;
+    background-color: black;
+    opacity: 0.9px;
+    text-align: center;
+    color: var(--textcolor);
+    height: 100%;
+        body{
+            display: flex;
+            flex-flow: column;
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding:0px;
+            font-size: 2.2rem;
+            header{
+                display: flex;
+                min-height: 69px;
+                border-bottom: 1px solid seashell;
+                align-items: center;
+                position: fixed;
+                top: 0;
+                background-color: black;
+                width: 100%;
+                a img{
+                    height: 50px;
+                    padding-left: 10px;
+                }
+                nav{
+                    flex: 1;
+                    text-align:right;
+                    a{
+                        padding: 0 1.6rem;
+                        color: seashell;
+                    }
+                }
+            }
+            main{
+                flex: 1;
+                section#mission{
+                    margin: 0 2rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-image: url(../images/img-mission-background.jpg);
+                        height:700px;
+                        div.text{
+                            background-color: black;
+                            width: 100%;
+                        }
+                }
+                section#teaOfMonth{
+                    max-width: 1000px;
+                    margin: 0 auto;
+                    div.cards{
+                        flex: 1;
+                        width: 100%;
+                        display: flex;
+                        flex-flow: row wrap;
+                        gap: 2rem;
+                        justify-content: center;
+                        img{
+                            width: 300px;
+                            height: 200px;
+                            margin-bottom: 1rem;
+                        }
+                        h4{
+                            margin: 0px;
+                        }
+                    }
+                    div.cards:last-of-type{
+                        margin-bottom: 5rem;
+                    }
+                }
+                section#locations{
+                    min-height: 500px;
+                    padding-bottom: 50px ;
+                    background-image: url(../images/img-locations-background.jpg);
+                    h2{
+                        color: black;
+                        margin: 0px;
+                    }
+                    div.addresses{
+                        display: flex;                        
+                        flex-flow: row wrap;
+                        opacity: 1;
+                        justify-content: center;
+                        gap: 2rem;
+                        div.place{
+                            width: 300px;
+                            background-color: black;
+                            padding:2rem;
+                            margin-bottom: auto;
+                        }
+                    }
+                }
+            }
+            footer{
+                display:block;
+                div#contact{
+                    height: 20rem;
+                }
+                div#copyright{
+                    font-size: 1.6rem;
+                    margin-left: 2rem;
+                    text-align: left;
+                }
+            }
+        }
+}
