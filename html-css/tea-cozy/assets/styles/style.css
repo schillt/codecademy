@@ -91,9 +91,9 @@ html body main section#locations {
   padding-bottom: 50px ;
   background-image: url(../images/img-locations-background.jpg);
 }
-html body main section#locations h2 {
-  color: black;
-  margin: 0px;
+html body main section#locations div {
+  color: seashell;
+  padding: 2rem;
 }
 html body main section#locations div.addresses {
   display: flex;
