@@ -99,6 +99,7 @@ html body main section#information div.sidebar {
 }
 html body main section#information div.sidebar div.sideItem {
   display: flex;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   width: auto;
@@ -162,29 +163,29 @@ html body main section#thesis div.sidebar div.sideItem:hover {
   background-color: rgba(201, 201, 201, 0.685);
 }
 @media only screen and (min-width: 800px) {
-  section#information {
+  html body main section#information {
     grid-template-columns: 60% 40%;
   }
-  section#information div.frontPage img {
+  html body main section#information div.frontPage img {
     margin: 0 auto;
   }
-  section#information div.sidebar div.sideItem {
+  html body main section#information div.sidebar div.sideItem {
     display: none;
     display: flex;
     flex-flow: row wrap;
   }
-  section#information div.sidebar div.sideItem img {
+  html body main section#information div.sidebar div.sideItem img {
     width: 35%;
     height: auto;
   }
-  section#learning {
+  html body main section#learning {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  section#learning div.cardLayout {
+  html body main section#learning div.cardLayout {
     width: auto;
     display: flex;
     gap: 3.2rem;
@@ -193,21 +194,21 @@ html body main section#thesis div.sidebar div.sideItem:hover {
     justify-content: center;
     max-width: 1500px;
   }
-  section#learning div.card {
+  html body main section#learning div.card {
     text-align: left;
   }
-  section#thesis {
+  html body main section#thesis {
     grid-template-columns: 60% 40%;
   }
-  section#thesis div.video video {
+  html body main section#thesis div.video video {
     margin: 0 auto;
   }
-  section#thesis div.sidebar div.sideItem {
+  html body main section#thesis div.sidebar div.sideItem {
     display: none;
     display: flex;
     flex-flow: row wrap;
   }
-  section#thesis div.sidebar div.sideItem img {
+  html body main section#thesis div.sidebar div.sideItem img {
     width: 35%;
     height: auto;
   }

@@ -114,6 +114,7 @@ html{
 
                     div.sideItem{
                         display: flex;
+                        flex-flow: column wrap;
                         justify-content: center;
                         align-items: center;
                         width: auto;
@@ -200,69 +201,80 @@ html{
 }
 
 @media only screen and (min-width: 800px) {
-    section#information{
-        grid-template-columns: 60% 40%;
+    html{
 
-        div.frontPage {     
-            img{
-                margin: 0 auto;
-            }
-        }
-        
-        div.sidebar{
-            div.sideItem{
-                display: none;
-                display: flex;
-                flex-flow: row wrap;
-                img{
-                    width: 35%;
-                    height: auto;
+        body{
+
+            main{
+
+                section#information{
+                    grid-template-columns: 60% 40%;
+            
+                    div.frontPage {     
+                        img{
+                            margin: 0 auto;
+                        }
+                    }
+                    
+                    div.sidebar{
+                        div.sideItem{
+                            display: none;
+                            display: flex;
+                            flex-flow: row wrap;
+                            img{
+                                width: 35%;
+                                height: auto;
+                            }
+                        }
+                    }            
+                }
+            
+                section#learning{
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    div.cardLayout{
+                        width: auto;
+                        display: flex;
+                        gap: 3.2rem;
+                        flex-flow: row wrap;
+                        margin: 3.2rem 5.2rem;
+                        justify-content: center;
+                        max-width: 1500px;
+                    }
+            
+                    div.card{
+                        text-align: left;
+                    }
+            
+                }
+            
+                section#thesis{
+                    grid-template-columns: 60% 40%;
+            
+                    div.video {     
+                        video{
+                            margin: 0 auto;
+                        }
+                    }
+                    
+                    div.sidebar{
+                        div.sideItem{
+                            display: none;
+                            display: flex;
+                            flex-flow: row wrap;
+                            img{
+                                width: 35%;
+                                height: auto;
+                            }
+                        }
+                    }            
                 }
             }
-        }            
-    }
-
-    section#learning{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        div.cardLayout{
-            width: auto;
-            display: flex;
-            gap: 3.2rem;
-            flex-flow: row wrap;
-            margin: 3.2rem 5.2rem;
-            justify-content: center;
-            max-width: 1500px;
         }
-
-        div.card{
-            text-align: left;
-        }
-
     }
+    
 
-    section#thesis{
-        grid-template-columns: 60% 40%;
-
-        div.video {     
-            video{
-                margin: 0 auto;
-            }
-        }
-        
-        div.sidebar{
-            div.sideItem{
-                display: none;
-                display: flex;
-                flex-flow: row wrap;
-                img{
-                    width: 35%;
-                    height: auto;
-                }
-            }
-        }            
-    }
 }
