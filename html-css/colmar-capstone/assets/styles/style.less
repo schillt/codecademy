@@ -1,0 +1,267 @@
+:root{
+    --text:black;
+    --backColor: rgb(194, 194, 194);
+
+}
+
+*,
+*before,
+*after {
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    font-size: 62.5%;
+
+    body{
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+        width: 100%;
+        font-size: 1.6rem;
+        display: flex;
+        flex-flow: column;
+
+
+        header{
+            width: 100%;
+            min-height: 6.4rem;
+            display: flex;
+            align-items: center;
+
+            nav{
+                width: 100%;    
+            }
+
+            nav#mobileNav{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+                img{
+                    width: 35px;
+                }
+            }
+
+            nav#desktopNav{
+                display: none;
+            }
+        }
+
+        main{
+            flex: 1;
+            section#signUp{
+                display: flex;
+                flex-flow: row wrap;
+                background-color: var(--backColor);
+                justify-content: center;
+                div#hero{
+                    display: inline;
+                    img{
+                        width: 100%;
+                        max-width: 60rem;
+                    }                
+                }
+                
+                div.textContent{
+                    width: auto;
+                    margin: 3.2rem 1.6rem;
+                    h1{
+                        margin: 0 0 1.6rem 0;
+                    }
+
+                    p{
+                        margin: 1.6rem 0 2.4rem 0;
+                    }
+
+                    a.button{
+                        margin: 0 auto;
+                        display: block;
+                        text-align: center;
+                        text-decoration: none;
+                        color: white;
+                        background-color: gray;
+                        padding: .8rem;
+                        width: auto;
+                    }
+                }
+            }
+
+            section#information {
+                justify-content: center;
+                width: 100%;
+                display: grid;
+                grid-template-rows: auto auto;
+
+                div.frontPage {     
+                    img{
+                        width: 100%;
+                        margin: 0 auto;
+                        margin-top: 3.2rem;
+                    }
+                }
+
+                div.sidebar{
+                    gap: 1rem;
+                    justify-content: center;
+                    align-content: center;
+                    border: 2px solid rgba(199, 198, 198, .3);
+
+                    div.sideItem{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: auto;
+                        border-top: 2px solid rgba(199, 198, 198, .3);
+                        border-bottom: 4px solid rgba(199, 198, 198, .3);
+
+                        div.textContent{
+                            width: 65%;
+                        }
+                    }
+
+                    div.sideItem:first-of-type{
+                        margin-top: 3.2rem;
+                    }
+                    
+                    div.sideItem:hover{
+                        background-color: rgba(201, 201, 201, 0.685);
+                    }
+                }
+            }
+
+            section#learning{
+                background-color: var(--backColor);
+                div.cardLayout{
+                    display: flex;
+                    overflow-x: scroll;
+                }
+
+                div.cardLayout::-webkit-scrollbar{
+                    display: none;
+                }
+
+                div.card{
+                    img{
+                        max-width:400px;
+                    }
+                }
+            }
+
+            section#thesis{
+                justify-content: center;
+                width: 100%;
+                display: grid;
+                grid-template-rows: auto auto;
+
+                div.video {     
+                    video{
+                        width: 100%;
+                        margin: 0 auto;
+                        margin-top: 3.2rem;
+                    }
+                }
+
+                div.sidebar{
+                    gap: 1rem;
+                    justify-content: center;
+                    align-content: center;
+                    border: 2px solid rgba(199, 198, 198, .3);
+
+                    div.sideItem{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: auto;
+                        border-top: 2px solid rgba(199, 198, 198, .3);
+                        border-bottom: 4px solid rgba(199, 198, 198, .3);
+
+                        div.textContent{
+                            width: 65%;
+                        }
+                    }
+
+                    div.sideItem:first-of-type{
+                        margin-top: 3.2rem;
+                    }
+                    
+                    div.sideItem:hover{
+                        background-color: rgba(201, 201, 201, 0.685);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    section#information{
+        grid-template-columns: 60% 40%;
+
+        div.frontPage {     
+            img{
+                margin: 0 auto;
+            }
+        }
+        
+        div.sidebar{
+            div.sideItem{
+                display: none;
+                display: flex;
+                flex-flow: row wrap;
+                img{
+                    width: 35%;
+                    height: auto;
+                }
+            }
+        }            
+    }
+
+    section#learning{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div.cardLayout{
+            width: auto;
+            display: flex;
+            gap: 3.2rem;
+            flex-flow: row wrap;
+            margin: 3.2rem 5.2rem;
+            justify-content: center;
+            max-width: 1500px;
+        }
+
+        div.card{
+            text-align: left;
+        }
+
+    }
+
+    section#thesis{
+        grid-template-columns: 60% 40%;
+
+        div.video {     
+            video{
+                margin: 0 auto;
+            }
+        }
+        
+        div.sidebar{
+            div.sideItem{
+                display: none;
+                display: flex;
+                flex-flow: row wrap;
+                img{
+                    width: 35%;
+                    height: auto;
+                }
+            }
+        }            
+    }
+}

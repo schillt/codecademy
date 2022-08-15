@@ -1,0 +1,213 @@
+:root {
+  --text: black;
+  --backColor: #c2c2c2;
+}
+*,
+*before,
+*after {
+  box-sizing: border-box;
+}
+html {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  font-size: 62.5%;
+}
+html body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  display: flex;
+  flex-flow: column;
+}
+html body header {
+  width: 100%;
+  min-height: 6.4rem;
+  display: flex;
+  align-items: center;
+}
+html body header nav {
+  width: 100%;
+}
+html body header nav#mobileNav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+html body header nav#mobileNav img {
+  width: 35px;
+}
+html body header nav#desktopNav {
+  display: none;
+}
+html body main {
+  flex: 1;
+}
+html body main section#signUp {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: var(--backColor);
+  justify-content: center;
+}
+html body main section#signUp div#hero {
+  display: inline;
+}
+html body main section#signUp div#hero img {
+  width: 100%;
+  max-width: 60rem;
+}
+html body main section#signUp div.textContent {
+  width: auto;
+  margin: 3.2rem 1.6rem;
+}
+html body main section#signUp div.textContent h1 {
+  margin: 0 0 1.6rem 0;
+}
+html body main section#signUp div.textContent p {
+  margin: 1.6rem 0 2.4rem 0;
+}
+html body main section#signUp div.textContent a.button {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: gray;
+  padding: 0.8rem;
+  width: auto;
+}
+html body main section#information {
+  justify-content: center;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+html body main section#information div.frontPage img {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 3.2rem;
+}
+html body main section#information div.sidebar {
+  gap: 1rem;
+  justify-content: center;
+  align-content: center;
+  border: 2px solid rgba(199, 198, 198, 0.3);
+}
+html body main section#information div.sidebar div.sideItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  border-top: 2px solid rgba(199, 198, 198, 0.3);
+  border-bottom: 4px solid rgba(199, 198, 198, 0.3);
+}
+html body main section#information div.sidebar div.sideItem div.textContent {
+  width: 65%;
+}
+html body main section#information div.sidebar div.sideItem:first-of-type {
+  margin-top: 3.2rem;
+}
+html body main section#information div.sidebar div.sideItem:hover {
+  background-color: rgba(201, 201, 201, 0.685);
+}
+html body main section#learning {
+  background-color: var(--backColor);
+}
+html body main section#learning div.cardLayout {
+  display: flex;
+  overflow-x: scroll;
+}
+html body main section#learning div.cardLayout::-webkit-scrollbar {
+  display: none;
+}
+html body main section#learning div.card img {
+  max-width: 400px;
+}
+html body main section#thesis {
+  justify-content: center;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+html body main section#thesis div.video video {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 3.2rem;
+}
+html body main section#thesis div.sidebar {
+  gap: 1rem;
+  justify-content: center;
+  align-content: center;
+  border: 2px solid rgba(199, 198, 198, 0.3);
+}
+html body main section#thesis div.sidebar div.sideItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  border-top: 2px solid rgba(199, 198, 198, 0.3);
+  border-bottom: 4px solid rgba(199, 198, 198, 0.3);
+}
+html body main section#thesis div.sidebar div.sideItem div.textContent {
+  width: 65%;
+}
+html body main section#thesis div.sidebar div.sideItem:first-of-type {
+  margin-top: 3.2rem;
+}
+html body main section#thesis div.sidebar div.sideItem:hover {
+  background-color: rgba(201, 201, 201, 0.685);
+}
+@media only screen and (min-width: 800px) {
+  section#information {
+    grid-template-columns: 60% 40%;
+  }
+  section#information div.frontPage img {
+    margin: 0 auto;
+  }
+  section#information div.sidebar div.sideItem {
+    display: none;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  section#information div.sidebar div.sideItem img {
+    width: 35%;
+    height: auto;
+  }
+  section#learning {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section#learning div.cardLayout {
+    width: auto;
+    display: flex;
+    gap: 3.2rem;
+    flex-flow: row wrap;
+    margin: 3.2rem 5.2rem;
+    justify-content: center;
+    max-width: 1500px;
+  }
+  section#learning div.card {
+    text-align: left;
+  }
+  section#thesis {
+    grid-template-columns: 60% 40%;
+  }
+  section#thesis div.video video {
+    margin: 0 auto;
+  }
+  section#thesis div.sidebar div.sideItem {
+    display: none;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  section#thesis div.sidebar div.sideItem img {
+    width: 35%;
+    height: auto;
+  }
+}
