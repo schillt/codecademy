@@ -1,0 +1,59 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html{
+    background-color: rgb(249, 246, 237);
+    height: 100%;
+    padding: 0px;
+    margin: 0px;    
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html body {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    font-size: 2.2rem;
+}
+
+html body header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+html body header a img {
+    height: 75px;
+  }
+
+html body header nav {
+    text-align: right;
+  }
+  html body header nav a {
+    padding: 0 1.6rem;
+    color: rgb(0, 0, 0);
+  }
+html body main{
+    flex: 1;
+    padding: 0px;
+    margin: 0px;
+}
+
+#banner{
+background-image: url(../images/main.jpg);
+background-size: cover;
+}
+
+div#mainText{
+    background-color:rgba(4, 68, 30, 0.141);
+    color: white;
+    backdrop-filter: blur(10px);
+    margin: 10%;
+    padding: 7px;
+    border-radius: 8px;
+    text-align: center;  
+}
